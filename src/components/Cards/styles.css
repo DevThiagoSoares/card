@@ -3,10 +3,10 @@ section {
     margin: 50px auto;
 }
 
-button {
+.button {
+    margin-top: 1rem;
     position: relative;
     display: inline-block;
-    margin-top: 1rem;
     background-color: #fff;
     border: none;
     color: #000;
@@ -18,11 +18,12 @@ button {
     transition: all 0.3s ease-in-out;
 }
 
-button:hover {
-    transform: translateY(-2px);
+.button:hover {
+    transform: translateY(-1px);
+    background-color: aliceblue;
 }
 
-button::before {
+.button::before {
     content: "";
     position: absolute;
     top: 50%;
@@ -36,7 +37,7 @@ button::before {
     z-index: -1;
 }
 
-button:active::before {
+.button:active::before {
     width: 200%;
     height: 200%;
 }

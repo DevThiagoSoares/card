@@ -40,7 +40,7 @@ function Card() {
                     </div>
 
                 </div>
-                <button
+                <button className="button"
                     onClick={() => {
                         if (questaoAtual === questoes.length - 1) {
                             setQuestaoAtual(0);
