@@ -1,9 +1,14 @@
 import "./styles.css";
 import { useState } from "react";
+import Cadastro from "../Cadastro";
 
 function Card() {
     const [classe, setClasse] = useState(false);
     const [questaoAtual, setQuestaoAtual] = useState(0);
+    const [pergunta, setPergunta] = useState([]);
+    const [modalAberta, setModalAberta] = useState(false);
+
+
 
     const questoes = [
         {
@@ -24,37 +29,60 @@ function Card() {
         },
     ];
 
+    if (pergunta.length === 0) {
+        questoes.map((item) => {
+            pergunta.push(item)
+        })
+    }
+
+    function handleCadastro(novaPergunta) {
+        setPergunta([...pergunta, novaPergunta]);
+    }
     return (
         <div className="App">
+            {/* <Cadastro onCadastro={handleCadastro} /> */}
             <section>
                 <div className="face" onClick={() => {
                     setClasse(!classe);
                 }}>
                     <div className={classe ? "front" : "front2"}>
                         <h2>PERGUNTA</h2>
-                        <p>{questoes[questaoAtual].pergunta}</p>
+                        <p>{pergunta[questaoAtual].pergunta}</p>
                     </div>
                     <div className={classe ? "back" : "back2"}>
                         <h2>RESPOSTA</h2>
-                        <p>{questoes[questaoAtual].resposta}</p>
+                        <p>{pergunta[questaoAtual].resposta}</p>
                     </div>
-
                 </div>
-                <button className="button"
-                    onClick={() => {
-                        if (questaoAtual === questoes.length - 1) {
-                            setQuestaoAtual(0);
-                        } else {
-                            const questaoAleatoria = Math.floor(Math.random() * 4);
-                            setQuestaoAtual(questaoAleatoria);
 
-                        }
-                        setClasse(false);
-                    }}
-                >
-                    Próxima Questão
-                </button>
+                <div className="buttons-container">
+                    <button className="button"
+                        onClick={() => {
+                            if (questaoAtual === pergunta.length - 1) {
+                                setQuestaoAtual(0);
+                            } else {
+                                const questaoAleatoria = Math.floor(Math.random() * pergunta.length);
+                                setQuestaoAtual(questaoAleatoria);
+                            }
+                            setClasse(false);
+                        }}
+                    >
+                        Próxima Questão
+                    </button>
+                    <button className="button" onClick={() => setModalAberta(true)}>Cadastrar Questão</button>
+                </div>
             </section>
+
+            {
+                modalAberta && (
+                    <div className="modal" overlayClassName="Overlay">
+                        <Cadastro onCadastro={handleCadastro} />
+                        <button className="button" onClick={() => setModalAberta(false)}>Fechar Modal</button>
+                    </div>
+                )
+            }
+
+
         </div >
     );
 }

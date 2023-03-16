@@ -1,6 +1,24 @@
+body {
+    width: 100vw;
+    height: 100vh;
+    background: #000;
+}
+
 section {
     width: 500px;
     margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.buttons-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
 }
 
 .button {
@@ -109,4 +127,29 @@ section {
 .back2 {
     transform: rotateY(-180deg);
     z-index: 1;
+}
+
+
+
+.modal {
+    width: 80vw;
+    height: 60vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    outline: none;
+}
+
+.Overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
 }
