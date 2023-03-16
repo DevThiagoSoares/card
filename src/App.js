@@ -1,62 +1,45 @@
 import "./App.css";
-import { useEffect, useState } from "react";
-import { shuffle } from "./suffler";
+import { useState } from "react";
 
 function App() {
   const [classe, setClasse] = useState(false);
+  const [questaoAtual, setQuestaoAtual] = useState(0);
 
   const questoes = [
     {
       pergunta: "questão 1",
-      resposta: "reposta 1",
-      indice: 0,
+      resposta: "resposta 1",
     },
     {
       pergunta: "questão 2",
-      resposta: "reposta 22",
-      indice: 1,
+      resposta: "resposta 2",
     },
     {
       pergunta: "questão 3",
-      resposta: "reposta 33",
-      indice: 2,
+      resposta: "resposta 3",
     },
     {
       pergunta: "questão 4",
-      resposta: "reposta 44",
-      indice: 3,
+      resposta: "resposta 4",
     },
   ];
 
-  // const adicionarQuestao = () => {
-  //   setQuestoes([
-  //     ...questoes,
-  //     {
-  //       pergunta: "nova pergunta",
-  //       resposta: "nova resposta",
-  //     },
-  //   ]);
-  // };
 
-  const dataQuestao = shuffle(questoes);
-
-  // console.log(dataQuestao);
+  // shuffle(questoes);
 
   return (
     <div className="App">
-      {/* <button onClick={adicionarQuestao}>Adicionar Questão</button> */}
       <section>
         <div className="face">
           <div className={classe ? "front" : "front2"}>
             <h2>PERGUNTA</h2>
-            <p>{questoes[0].pergunta}</p>
-            {/* <p>{indiceAleatorio}</p> */}
+            <p>{questoes[questaoAtual].pergunta}</p>
           </div>
           <div className={classe ? "back" : "back2"}>
             <h2>RESPOSTA</h2>
-            <p>{questoes[0].resposta}</p>
-            {/* <p>{this.indiceAleatorios}</p> */}
+            <p>{questoes[questaoAtual].resposta}</p>
           </div>
+
         </div>
         <button
           onClick={() => {
@@ -65,8 +48,23 @@ function App() {
         >
           click
         </button>
+        <button
+          onClick={() => {
+            if (questaoAtual === questoes.length - 1) {
+              setQuestaoAtual(0);
+            } else {
+              const questaoAleatoria = Math.floor(Math.random() * 4);
+              setQuestaoAtual(questaoAleatoria);
+
+            }
+            setClasse(false);
+          }}
+        >
+          Próxima Questão
+        </button>
       </section>
     </div>
   );
 }
+
 export default App;
