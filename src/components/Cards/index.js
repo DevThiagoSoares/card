@@ -38,6 +38,12 @@ function Card() {
     function handleCadastro(novaPergunta) {
         setPergunta([...pergunta, novaPergunta]);
     }
+
+    function quitPage() {
+        localStorage.clear()
+        window.location.reload(true)
+    }
+
     return (
         <div className="App">
             {/* <Cadastro onCadastro={handleCadastro} /> */}
@@ -56,6 +62,7 @@ function Card() {
                 </div>
 
                 <div className="buttons-container">
+                    <button className="button" onClick={() => setModalAberta(true)}>Cadastrar Questão</button>
                     <button className="button"
                         onClick={() => {
                             if (questaoAtual === pergunta.length - 1) {
@@ -69,7 +76,7 @@ function Card() {
                     >
                         Próxima Questão
                     </button>
-                    <button className="button" onClick={() => setModalAberta(true)}>Cadastrar Questão</button>
+                    <button className="button" onClick={quitPage}>Sair</button>
                 </div>
             </section>
 
