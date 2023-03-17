@@ -45,7 +45,7 @@ function Card() {
     }
 
     return (
-        <div className="App">
+        <div className="app">
             {/* <Cadastro onCadastro={handleCadastro} /> */}
             <section>
                 <div className="face" onClick={() => {
@@ -62,7 +62,7 @@ function Card() {
                 </div>
 
                 <div className="buttons-container">
-                    <button className="button" onClick={() => setModalAberta(true)}>Cadastrar Questão</button>
+                    <button className="button" onClick={() => setModalAberta(true)}>Cadastrar Pergunta</button>
                     <button className="button"
                         onClick={() => {
                             if (questaoAtual === pergunta.length - 1) {
@@ -74,11 +74,11 @@ function Card() {
                             setClasse(false);
                         }}
                     >
-                        Próxima Questão
+                        Próxima Pergunta
                     </button>
-                    <button className="button" onClick={quitPage}>Sair</button>
                 </div>
             </section>
+            <button className="button sair" onClick={quitPage}>Sair</button>
 
             {
                 modalAberta && (

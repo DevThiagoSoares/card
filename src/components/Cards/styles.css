@@ -13,6 +13,12 @@ section {
     align-items: center;
 }
 
+.app {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
 .buttons-container {
     width: 100%;
     display: flex;
@@ -58,6 +64,10 @@ section {
 .button:active::before {
     width: 200%;
     height: 200%;
+}
+
+.button.sair {
+    width: 450px;
 }
 
 .face {
@@ -152,4 +162,32 @@ section {
     right: 0;
     bottom: 0;
     background-color: rgba(0, 0, 0, 0.5);
+}
+
+
+@media only screen and (max-width: 768px) {
+    section {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    .face {
+        width: 80%;
+        height: 500px;
+        margin: 0 auto;
+    }
+
+    .front,
+    .back {
+        padding: 5px;
+    }
+
+    .front2,
+    .back2 {
+        padding: 5px;
+    }
+
+    .button.sair {
+        width: 100%;
+    }
 }
