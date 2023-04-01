@@ -48,7 +48,7 @@ function Login() {
     <div className="login-container">
       {/* <h1>Login</h1> */}
       <form onSubmit={handleSubmit}>
-        <label htmlFor="email">Email:</label>
+        <label htmlFor="email">Login:</label>
         <input
           type="number"
           id="email"
