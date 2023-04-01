@@ -11,84 +11,6 @@ function Card() {
 
   const questoes = [
     {
-      pergunta: "Quais as Jóias fixas de uma Loja?",
-      resposta: "A Prancheta da Loja - a Pedra Bruta e a Pedra Cúbica.",
-    },
-    {
-      pergunta: "Quais as jóias móveis da Loja ?",
-      resposta: "O Esquadro, o Nível e o Prumo.",
-    },
-    {
-      pergunta: "Onde se encontram e quem representam estas jóias ?",
-      resposta:
-        "Nos Colares do: Ven..M..o esquadro; - 1° Vig..o nível; e 2° Vig.. o prumo",
-    },
-    {
-      pergunta: "A que ordem de Arquitetura foram dadas essas três CCol..?",
-      resposta:
-        "A Jônica- para representar a Sabedoria; a Dórica- para representar a Fôrça; e a Coríntia- para representar a Beleza.",
-    },
-    {
-      pergunta: "Simbolicamente, o que representa o Teto das Lojas Maçônicas?",
-      resposta:
-        "APR-A abóboda celeste, a para atingir o Céu, é representado na Escada de Jacó, cujos degraus representam uma das Virtudes do Maçom.",
-    },
-    {
-      pergunta:
-        "Quais os três símbolos destacados, na base, no centro e no topo da escada ?",
-      resposta: "Fé, Esperança e Caridade.",
-    },
-    {
-      pergunta: "O que representa o Sol no teto das Lojas simbólicas?",
-      resposta:
-        "Simboliza a Glória do Criador, através dos seus raios vivificantes nos ensina a praticar o Bem.",
-    },
-    {
-      pergunta:
-        "O Pavimento de Mosaico com seus quadrados pretos e brancos que lição nos ensina?",
-      resposta:
-        "Que apesar da diversidade, do antagonismo, não deve existir distinção, porque a Humanidade foi criada para viver na mais perfeita harmonia e na mais íntima Fraternidade.",
-    },
-    {
-      pergunta: "O que representa a Orla Dentada?",
-      resposta:
-        "Nos mostra a atração universal, simboliza o amor que deve existir entre os Ir...",
-    },
-    {
-      pergunta:
-        "Quais as quatrovirtudes cardeais representada em cada canto do pavimento?",
-      resposta: "A Temperança; Justiça; Coragem; e Prudência.",
-    },
-    {
-      pergunta: "O que representa o Livro da Lei em uma Loja simbólica ?",
-      resposta:
-        "O Códido de Moral que cada um de nós respeita e segue. Aqui representado pela Bíblia Sagrada.",
-    },
-    {
-      pergunta: "Que há de comum entre nós?",
-      resposta: "Uma Verdade.",
-    },
-
-    {
-      pergunta: "Que vos exigiram para ser maçom?",
-      resposta: "Ser Livre e de Bons Costumes.",
-    },
-    {
-      pergunta: "Como foste recebido Maçom?",
-      resposta: "Nem nu, nem vestido.",
-    },
-    {
-      pergunta: "Que vos fizeram para vos instruir?",
-      resposta:
-        "Fizeram-me viajar do Ocidente para o Oriente e do Oriente para o Ocidente. A princípio, por um caminho escabroso, em meio de ruídos e trovões; depois, por um caminho menos difícil, ouvindo-se choque de armas; finalmente em uma terceira viagem, por um caminho suave, envolto do maior silêncio.",
-    },
-    {
-      pergunta: "Que vos fizeram para vos instruir?",
-      resposta:
-        "Fizeram-me viajar do Ocidente para o Oriente e do Oriente para o Ocidente. A princípio, por um caminho escabroso, em meio de ruídos e trovões; depois, por um caminho menos difícil, ouvindo-se choque de armas; finalmente em uma terceira viagem, por um caminho suave, envolto do maior silêncio.",
-    },
-
-    {
       pergunta: "Sois Maçom ?",
       resposta: "M..I..C..T..M..R..",
     },
@@ -167,6 +89,84 @@ function Card() {
     {
       pergunta: "E os Pilares da Força e da Beleza?",
       resposta: "Os 1° e 2° Vigilantes.",
+    },
+
+    {
+      pergunta: "Quais as Jóias fixas de uma Loja?",
+      resposta: "A Prancheta da Loja - a Pedra Bruta e a Pedra Cúbica.",
+    },
+    {
+      pergunta: "Quais as jóias móveis da Loja ?",
+      resposta: "O Esquadro, o Nível e o Prumo.",
+    },
+    {
+      pergunta: "Onde se encontram e quem representam estas jóias ?",
+      resposta:
+        "Nos Colares do: Ven..M..o esquadro; - 1° Vig..o nível; e 2° Vig.. o prumo",
+    },
+    {
+      pergunta: "A que ordem de Arquitetura foram dadas essas três CCol..?",
+      resposta:
+        "A Jônica- para representar a Sabedoria; a Dórica- para representar a Fôrça; e a Coríntia- para representar a Beleza.",
+    },
+    {
+      pergunta: "Simbolicamente, o que representa o Teto das Lojas Maçônicas?",
+      resposta:
+        "APR-A abóboda celeste, a para atingir o Céu, é representado na Escada de Jacó, cujos degraus representam uma das Virtudes do Maçom.",
+    },
+    {
+      pergunta:
+        "Quais os três símbolos destacados, na base, no centro e no topo da escada ?",
+      resposta: "Fé, Esperança e Caridade.",
+    },
+    {
+      pergunta: "O que representa o Sol no teto das Lojas simbólicas?",
+      resposta:
+        "Simboliza a Glória do Criador, através dos seus raios vivificantes nos ensina a praticar o Bem.",
+    },
+    {
+      pergunta:
+        "O Pavimento de Mosaico com seus quadrados pretos e brancos que lição nos ensina?",
+      resposta:
+        "Que apesar da diversidade, do antagonismo, não deve existir distinção, porque a Humanidade foi criada para viver na mais perfeita harmonia e na mais íntima Fraternidade.",
+    },
+    {
+      pergunta: "O que representa a Orla Dentada?",
+      resposta:
+        "Nos mostra a atração universal, simboliza o amor que deve existir entre os Ir...",
+    },
+    {
+      pergunta:
+        "Quais as quatrovirtudes cardeais representada em cada canto do pavimento?",
+      resposta: "A Temperança; Justiça; Coragem; e Prudência.",
+    },
+    {
+      pergunta: "O que representa o Livro da Lei em uma Loja simbólica ?",
+      resposta:
+        "O Códido de Moral que cada um de nós respeita e segue. Aqui representado pela Bíblia Sagrada.",
+    },
+    {
+      pergunta: "Que há de comum entre nós?",
+      resposta: "Uma Verdade.",
+    },
+
+    {
+      pergunta: "Que vos exigiram para ser maçom?",
+      resposta: "Ser Livre e de Bons Costumes.",
+    },
+    {
+      pergunta: "Como foste recebido Maçom?",
+      resposta: "Nem nu, nem vestido.",
+    },
+    {
+      pergunta: "Que vos fizeram para vos instruir?",
+      resposta:
+        "Fizeram-me viajar do Ocidente para o Oriente e do Oriente para o Ocidente. A princípio, por um caminho escabroso, em meio de ruídos e trovões; depois, por um caminho menos difícil, ouvindo-se choque de armas; finalmente em uma terceira viagem, por um caminho suave, envolto do maior silêncio.",
+    },
+    {
+      pergunta: "Que vos fizeram para vos instruir?",
+      resposta:
+        "Fizeram-me viajar do Ocidente para o Oriente e do Oriente para o Ocidente. A princípio, por um caminho escabroso, em meio de ruídos e trovões; depois, por um caminho menos difícil, ouvindo-se choque de armas; finalmente em uma terceira viagem, por um caminho suave, envolto do maior silêncio.",
     },
 
     {
@@ -268,6 +268,15 @@ function Card() {
     setClasse(false);
   }
 
+  function voltarParaPerguntaAnterior() {
+    if (questaoAtual > 0) {
+      setQuestaoAtual(questaoAtual - 1);
+    } else {
+      alert("Esta é a primeira pergunta!");
+      setQuestaoAtual(0);
+    }
+  }
+
   function handleOpcao(e) {
     setOpcao(e.target.value);
   }
@@ -279,6 +288,7 @@ function Card() {
           <option value="naoAleatoria">Não Aleatorias</option>
           <option value="aleatoriaSemRepeticao">Aleatorias</option>
         </select>
+
         <div
           className="face"
           onClick={() => {
@@ -287,23 +297,26 @@ function Card() {
         >
           <div className={classe ? "front" : "front2"}>
             <h2>PERGUNTA</h2>
-            <p>{pergunta[questaoAtual].pergunta}</p>
+            <h3>{pergunta[questaoAtual].pergunta}</h3>
           </div>
           <div className={classe ? "back" : "back2"}>
             <h2>RESPOSTA</h2>
-            <p>{pergunta[questaoAtual].resposta}</p>
+            <h3>{pergunta[questaoAtual].resposta}</h3>
           </div>
         </div>
 
         <div className="buttons-container">
-          <button className="button" onClick={() => setModalAberta(true)}>
-            Cadastrar Pergunta
-          </button>
           <button className="button" onClick={gerarProximaPergunta}>
             Próxima Pergunta
           </button>
+          <button className="button" onClick={voltarParaPerguntaAnterior}>
+            Voltar Pergunta
+          </button>
         </div>
       </section>
+      <button className="button sair" onClick={() => setModalAberta(true)}>
+        Cadastrar Pergunta
+      </button>
       <button className="button sair" onClick={quitPage}>
         Sair
       </button>

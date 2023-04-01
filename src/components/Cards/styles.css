@@ -42,6 +42,10 @@ section {
   transition: all 0.3s ease-in-out;
 }
 
+.button.cadastrar {
+  width: 450px;
+}
+
 .button:hover {
   transform: translateY(-1px);
   background-color: aliceblue;
@@ -71,9 +75,17 @@ section {
 }
 
 .face {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   width: 400px;
   height: 500px;
   perspective: 700px;
+}
+
+.face h3 {
+  margin-top: 9em;
 }
 
 .front,
@@ -169,6 +181,7 @@ section {
   border: 1px solid #ccc;
   background-color: #fff;
   color: #333;
+  margin-bottom: 2rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -178,6 +191,10 @@ section {
   }
 
   .face {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     width: 80%;
     height: 500px;
     margin: 0 auto;
