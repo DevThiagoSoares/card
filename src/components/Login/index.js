@@ -7,7 +7,7 @@ function Login() {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
 
   function validateEmail(email) {
-    const re = /([0-9]{5)/;
+    const re = /[0-9]\d{4}/gm;
     return re.test(email);
   }
 
