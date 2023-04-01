@@ -306,11 +306,11 @@ function Card() {
         </div>
 
         <div className="buttons-container">
-          <button className="button" onClick={gerarProximaPergunta}>
-            Próxima Pergunta
-          </button>
           <button className="button" onClick={voltarParaPerguntaAnterior}>
             Voltar Pergunta
+          </button>
+          <button className="button" onClick={gerarProximaPergunta}>
+            Próxima Pergunta
           </button>
         </div>
       </section>
