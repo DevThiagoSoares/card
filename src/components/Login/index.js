@@ -12,7 +12,7 @@ function Login() {
   }
 
   function validatePassword(password) {
-    return password.length >= 6;
+    return password.length >= 5;
   }
 
   function handleSubmit(e) {
